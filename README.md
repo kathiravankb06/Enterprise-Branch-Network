@@ -1,6 +1,6 @@
 # Enterprise Branch Network Design & Security Implementation
 
-## 📌 Project Overview
+## Project Overview
 
 Designed and implemented a simulated enterprise branch network in Cisco Packet Tracer demonstrating routing, switching, VLAN segmentation, WAN connectivity, and ACL-based security.
 
@@ -8,7 +8,7 @@ The topology replicates a real-world Head Office ↔ Branch architecture with de
 
 ---
 
-## 🧱 Network Topology
+## Network Topology
 
 **Devices Used**
 
