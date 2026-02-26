@@ -1,0 +1,13 @@
+hostname SW1
+
+! ==============================
+! PC-HO Access Port
+! ==============================
+interface FastEthernet0/1
+switchport mode access
+
+! ==============================
+! Server Access Port
+! ==============================
+interface FastEthernet0/2
+switchport mode access

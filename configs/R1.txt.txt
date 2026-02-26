@@ -1,0 +1,31 @@
+hostname R1
+
+! ==============================
+! Head Office LAN Interface
+! ==============================
+interface GigabitEthernet0/0
+ip address 192.168.30.1 255.255.255.0
+no shutdown
+
+! ==============================
+! WAN Interface to Branch
+! ==============================
+interface GigabitEthernet0/1
+ip address 10.0.0.1 255.255.255.252
+ip access-group 100 in
+no shutdown
+
+! ==============================
+! OSPF Dynamic Routing
+! ==============================
+router ospf 1
+network 10.0.0.0 0.0.0.3 area 0
+network 192.168.30.0 0.0.0.255 area 0
+
+! ==============================
+! ACL Security Policy
+! IT VLAN blocked from Server
+! ==============================
+access-list 100 deny ip 192.168.20.0 0.0.0.255 host 192.168.30.20
+access-list 100 permit ip any any
+
