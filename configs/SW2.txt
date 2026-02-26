@@ -1,0 +1,31 @@
+hostname SW2
+
+! ==============================
+! VLAN Creation
+! ==============================
+vlan 10
+name HR
+
+vlan 20
+name IT
+
+! ==============================
+! HR PC Port
+! ==============================
+interface FastEthernet0/1
+switchport mode access
+switchport access vlan 10
+
+! ==============================
+! IT PC Port
+! ==============================
+interface FastEthernet0/2
+switchport mode access
+switchport access vlan 20
+
+! ==============================
+! Trunk to R2
+! ==============================
+interface FastEthernet0/24
+switchport mode trunk
+
