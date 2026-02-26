@@ -116,7 +116,6 @@ tracert
 ## 👤 Author
 
 **Kathiravan K B**
-Networking & Telecom
 
 LinkedIn: https://www.linkedin.com/in/kathiravan-k-b-4b7168328/
 
